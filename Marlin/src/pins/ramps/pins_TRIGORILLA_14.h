@@ -32,9 +32,10 @@
 //
 #if MB(TRIGORILLA_14_11)
   #define SERVO0_PIN                           5
-  #define SERVO1_PIN                           4
-  #define SERVO2_PIN                          11
-  #define SERVO3_PIN                           6
+  #define SERVO1_PIN                           6
+  #define SERVO2_PIN                           4
+  #define SERVO3_PIN                          11
+  #define SERVO4_PIN                          12
 #endif
 
 //
@@ -114,20 +115,28 @@
   #define SD_DETECT_PIN                       49
 #endif
 
-#if HAS_TMC_UART
+// #if HAS_TMC_UART
   #ifndef X_SERIAL_TX_PIN
-    #define X_SERIAL_TX_PIN           SERVO1_PIN
+    #define X_SERIAL_TX_PIN           SERVO3_PIN
+    #define X_SERIAL_RX_PIN           SERVO3_PIN
   #endif
   #ifndef Y_SERIAL_TX_PIN
-    #define Y_SERIAL_TX_PIN           SERVO0_PIN
+    #define Y_SERIAL_TX_PIN           51
+    #define Y_SERIAL_RX_PIN           51
   #endif
   #ifndef Z_SERIAL_TX_PIN
-    #define Z_SERIAL_TX_PIN           SERVO3_PIN
+    #define Z_SERIAL_TX_PIN           SERVO4_PIN
+    #define Z_SERIAL_RX_PIN           SERVO4_PIN
+  #endif
+  #ifndef Z2_SERIAL_TX_PIN
+    #define Z2_SERIAL_TX_PIN          50
+    #define Z2_SERIAL_RX_PIN          50
   #endif
   #ifndef E0_SERIAL_TX_PIN
-    #define E0_SERIAL_TX_PIN          SERVO2_PIN
+    #define E0_SERIAL_TX_PIN          52
+    #define E0_SERIAL_RX_PIN          52
   #endif
-#endif
+// #endif
 
 #include "pins_RAMPS.h"
 
