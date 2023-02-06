@@ -22,7 +22,7 @@
 #pragma once
 
 #define CONFIG_EXAMPLES_DIR "AnyCubic/i3 Mega"
-#define PINS_DEBUGGING
+// #define PINS_DEBUGGING
 
 /**
  * Configuration.h
@@ -777,9 +777,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 81.72
-  #define DEFAULT_bedKi 16.09
-  #define DEFAULT_bedKd 276.72
+  #define DEFAULT_bedKp 102.70
+  #define DEFAULT_bedKi 20.22
+  #define DEFAULT_bedKd 347.74
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
