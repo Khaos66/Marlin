@@ -877,8 +877,13 @@
 
 #define THERMAL_PROTECTION_HOTENDS // Enable thermal protection for all extruders
 #define THERMAL_PROTECTION_BED     // Enable thermal protection for the heated bed
-#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
-#define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
+// #define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
+// #define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
+
+/*
+ * Allow a bit of a temperature excursion due to slow or noisy thermistors. 100ms = 1s
+ */
+#define BOGUS_TEMPERATURE_GRACE_PERIOD 1000
 
 //===========================================================================
 //============================= Mechanical Settings =========================
