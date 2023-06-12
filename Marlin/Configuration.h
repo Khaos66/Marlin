@@ -681,7 +681,7 @@
 #define PID_K1 0.95      // Smoothing factor within any PID loop
 
 #if ENABLED(PIDTEMP)
-  //#define PID_DEBUG             // Print PID debug data to the serial port. Use 'M303 D' to toggle activation.
+  #define PID_DEBUG             // Print PID debug data to the serial port. Use 'M303 D' to toggle activation.
   //#define PID_PARAMS_PER_HOTEND // Use separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with G-code: M301 E[extruder number, 0-2]
 
@@ -692,9 +692,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp 8.56
-    #define DEFAULT_Ki 0.35
-    #define DEFAULT_Kd 52.96
+    #define DEFAULT_Kp 10.94
+    #define DEFAULT_Ki 0.51
+    #define DEFAULT_Kd 58.71
   #endif
 #endif
 
@@ -883,7 +883,7 @@
 /*
  * Allow a bit of a temperature excursion due to slow or noisy thermistors. 100ms = 1s
  */
-#define BOGUS_TEMPERATURE_GRACE_PERIOD 1000
+// #define BOGUS_TEMPERATURE_GRACE_PERIOD 1000
 
 //===========================================================================
 //============================= Mechanical Settings =========================
