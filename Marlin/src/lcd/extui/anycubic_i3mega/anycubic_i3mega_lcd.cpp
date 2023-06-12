@@ -57,7 +57,6 @@ char AnycubicTFTClass::tftCommands[TFTBUFSIZE][TFT_MAX_CMD_SIZE];
 int AnycubicTFTClass::tftBufLen = 0,
     AnycubicTFTClass::tftBufIndR = 0,
     AnycubicTFTClass::tftBufIndW = 0;
-char AnycubicTFTClass::serial3_char;
 char* AnycubicTFTClass::tftStrchrPtr;
 uint8_t AnycubicTFTClass::specialMenu = false;
 AnycubicMediaPrintState AnycubicTFTClass::mediaPrintingState = AMPRINTSTATE_NOT_PRINTING;
