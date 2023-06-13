@@ -121,9 +121,9 @@
   #define Y_STOP_PIN                          42  // AUX
   //#define Z_STOP_PIN                          43  // AUX
   // #define Z2_MIN_PIN                          43  // 18  // Z-
-  #define Z_STOP_PIN                          43  // AUX (2)
+  #define Z_STOP_PIN                          18  // AUX (2)
   #ifndef Z2_STOP_PIN
-     #define Z2_STOP_PIN                      18  // Z-
+     #define Z2_STOP_PIN                      43  // Z-
   #endif
 
   #ifndef Z_MIN_PROBE_PIN
