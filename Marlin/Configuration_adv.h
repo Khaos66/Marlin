@@ -414,7 +414,7 @@
   #define PID_EXTRUSION_SCALING
   #if ENABLED(PID_EXTRUSION_SCALING)
     #define DEFAULT_Kc (200) // heating power = Kc * e_speed
-    #define LPQ_MAX_LEN 75
+    #define LPQ_MAX_LEN 50
   #endif
 
   /**
